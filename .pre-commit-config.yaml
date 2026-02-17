@@ -1,0 +1,18 @@
+# See httpspre-commit.com for more information
+# See httpspre-commit.comhooks.html for more hooks
+repos
+-   repo httpsgithub.compre-commitpre-commit-hooks
+    rev v3.2.0
+    hooks
+    -   id trailing-whitespace
+    -   id end-of-file-fixer
+    -   id check-yaml
+    -   id check-json
+    -   id check-added-large-files
+    -   id check-merge-conflict
+
+-   repo httpsgithub.comYelpdetect-secrets
+    rev v1.4.0
+    hooks
+    -   id detect-secrets
+        args ['--baseline', '.secrets.baseline']
